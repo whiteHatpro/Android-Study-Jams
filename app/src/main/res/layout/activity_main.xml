@@ -23,7 +23,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SpenTrack"
+                android:text="@string/spentrack"
                 android:textAllCaps="true"
                 android:textStyle="bold"
                 android:textSize="32sp"
@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Total Balance"
+                android:text="@string/total_balance"
                 android:textAllCaps="true"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
