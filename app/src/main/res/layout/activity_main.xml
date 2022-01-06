@@ -23,6 +23,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="SpenTrack"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:textColor="#002AFB"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Total Balance"
                 android:textAllCaps="true"
                 android:textStyle="bold"
