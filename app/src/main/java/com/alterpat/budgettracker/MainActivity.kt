@@ -82,9 +82,9 @@ class MainActivity : AppCompatActivity() {
         val budgetAmount = transactions.filter { it.amount>0 }.map{it.amount}.sum()
         val expenseAmount = totalAmount - budgetAmount
 
-        balance.text = "$ %.2f".format(totalAmount)
-        budget.text = "$ %.2f".format(budgetAmount)
-        expense.text = "$ %.2f".format(expenseAmount)
+        balance.text = "₹ %.2f".format(totalAmount)
+        budget.text = "₹ %.2f".format(budgetAmount)
+        expense.text = "₹ %.2f".format(expenseAmount)
     }
 
     private fun undoDelete(){

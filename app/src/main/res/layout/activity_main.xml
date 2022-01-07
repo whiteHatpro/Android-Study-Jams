@@ -17,31 +17,35 @@
             android:id="@+id/balance_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="18dp">
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/spentrack"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="#002AFB"
                 android:textSize="32sp"
-                android:textColor="#002AFB"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
                 android:text="@string/total_balance"
                 android:textAllCaps="true"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$300"
+                android:text="$400"
                 android:textSize="32sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <com.google.android.material.card.MaterialCardView
@@ -78,7 +82,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Budget"
+                        android:text="@string/budget"
                         android:textSize="17sp"
                         android:textAllCaps="true"/>
                 </LinearLayout>
@@ -88,18 +92,19 @@
                     android:orientation="vertical"
                     android:layout_weight="0.5"
                     android:gravity="center">
+
                     <TextView
                         android:id="@+id/expense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$400"
-                        android:textStyle="bold"
+                        android:textColor="@color/red"
                         android:textSize="32sp"
-                        android:textColor="@color/red"/>
+                        android:textStyle="bold" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Expense"
+                        android:text="@string/expense"
                         android:textSize="17sp"
                         android:textAllCaps="true"/>
                 </LinearLayout>
@@ -110,20 +115,23 @@
             android:id="@+id/recyclerview_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Transactions"
-            android:textStyle="bold"
-            android:textSize="17sp"
-            android:textAllCaps="true"
             android:layout_below="@id/dashboard"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="12dp"
-            android:layout_marginStart="10dp" />
+            android:text="Transactions"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/recyclerview_title"
-            android:layout_margin="10dp"/>
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/addBtn"
