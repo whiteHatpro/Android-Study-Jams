@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="true">
     <item android:state_focused="true"
-        android:drawable="@drawable/ic_money_focused"/>
+        android:drawable="@drawable/ic_icon_focused"/>
+
     <item android:state_focused="false"
-        android:drawable="@drawable/ic_money"/>
+        android:drawable="@drawable/ic_icons8_rupee_96"/>
+
 </selector>

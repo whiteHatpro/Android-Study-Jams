@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/app/SpenTrack/app/src/main/res/drawable/ic_icon_focused.xml" value="0.26614583333333336" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/drawable/ic_icons8_rupee_96.xml" value="0.26614583333333336" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/drawable/ic_label.xml" value="0.26614583333333336" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26614583333333336" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/drawable/ic_money.xml" value="0.26614583333333336" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/drawable/ic_money_focused.xml" value="0.26614583333333336" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/drawable/money_selector.xml" value="0.26614583333333336" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/font/lato_bold.xml" value="0.15729166666666666" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/layout/activity_main.xml" value="0.3473227206946454" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26614583333333336" />
+        <entry key="..\:/app/SpenTrack/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/actn_logo.xml" value="0.2546875" />
+        <entry key="app/src/main/res/drawable/spenlogo.xml" value="0.2546875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23854166666666668" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

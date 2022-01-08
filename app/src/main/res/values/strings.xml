@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">SpenTrack</string>
     <string name="SpenTrack">SpenTrack</string>
+    <string name="spentrack">SpenTrack</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="spentrackk">SpenTrack</string>
+    <string name="budget">Budget</string>
+    <string name="expense">Expense</string>
 </resources>
