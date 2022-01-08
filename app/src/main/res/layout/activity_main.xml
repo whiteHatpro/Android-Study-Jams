@@ -6,19 +6,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="#A4CDD6"
     >
 
-<<<<<<< HEAD
-=======
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="-675dp"
         app:srcCompat="@drawable/actn_bar" />
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/spentrack_bg" />
 
+    <TextView
+        android:id="@+id/titlee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
@@ -26,22 +33,15 @@
         android:fontFamily="@font/lato"
         android:letterSpacing="0.15"
         android:text="@string/spentrack"
+        android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#0c0d1c"
         android:textSize="35sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:contentDescription="TODO"
-        app:srcCompat="@drawable/spentrack_bg" />
+        android:textStyle="bold"
+        app:layout_anchor="@+id/imageView"
+        app:layout_anchorGravity="center" />
 
 
->>>>>>> 1f2e9f52f9858959fa2f0a10775b4d9fa06b50c2
     <RelativeLayout
 
         android:layout_width="match_parent"
@@ -104,9 +104,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$400"
-                        android:textStyle="bold"
-                        android:textSize="32sp"
-                        android:textColor="@color/green"/>
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:textColor="@color/green"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -172,6 +172,9 @@
             android:backgroundTint="@color/red"
             app:tint="@color/white"
             app:borderWidth="0dp"/>
+
+
+
 
     </RelativeLayout>
 

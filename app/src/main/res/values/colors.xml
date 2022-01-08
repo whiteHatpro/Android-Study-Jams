@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-    <color name="colorPrimary">#229126</color>
-    <color name="colorPrimaryDark">#1E9A96</color>
-    <color name="colorAccent">#03DAC5</color>
-=======
+
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#0c0d1c</color>
     <color name="colorAccent">#BBD1D6</color>
->>>>>>> 1f2e9f52f9858959fa2f0a10775b4d9fa06b50c2
+
     <color name="textMain">#292929</color>
     <color name="green">#43A047</color>
     <color name="red">#E53935</color>
