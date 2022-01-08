@@ -9,6 +9,8 @@
     android:background="@color/colorAccent"
     >
 
+<<<<<<< HEAD
+=======
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,6 +41,7 @@
         app:srcCompat="@drawable/spentrack_bg" />
 
 
+>>>>>>> 1f2e9f52f9858959fa2f0a10775b4d9fa06b50c2
     <RelativeLayout
 
         android:layout_width="match_parent"
