@@ -6,42 +6,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#A4CDD6"
     >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-675dp"
+        app:srcCompat="@drawable/actn_bar" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/spentrack_bg" />
+
+    <TextView
+        android:id="@+id/titlee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="8.4dp"
+        android:fontFamily="@font/lato"
+        android:letterSpacing="0.15"
+        android:text="@string/spentrack"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#0c0d1c"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/imageView"
+        app:layout_anchorGravity="center" />
+
+
     <RelativeLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+
         <LinearLayout
             android:id="@+id/balance_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="18dp">
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/spentrack"
-                android:textAllCaps="true"
-                android:textStyle="bold"
-                android:textSize="32sp"
-                android:textColor="#002AFB"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
                 android:text="@string/total_balance"
                 android:textAllCaps="true"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$300"
+                android:text="$400"
                 android:textSize="32sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <com.google.android.material.card.MaterialCardView
@@ -72,13 +104,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$400"
-                        android:textStyle="bold"
-                        android:textSize="32sp"
-                        android:textColor="@color/green"/>
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:textColor="@color/green"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Budget"
+                        android:text="@string/budget"
                         android:textSize="17sp"
                         android:textAllCaps="true"/>
                 </LinearLayout>
@@ -88,18 +120,19 @@
                     android:orientation="vertical"
                     android:layout_weight="0.5"
                     android:gravity="center">
+
                     <TextView
                         android:id="@+id/expense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$400"
-                        android:textStyle="bold"
+                        android:textColor="@color/red"
                         android:textSize="32sp"
-                        android:textColor="@color/red"/>
+                        android:textStyle="bold" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Expense"
+                        android:text="@string/expense"
                         android:textSize="17sp"
                         android:textAllCaps="true"/>
                 </LinearLayout>
@@ -110,20 +143,23 @@
             android:id="@+id/recyclerview_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Transactions"
-            android:textStyle="bold"
-            android:textSize="17sp"
-            android:textAllCaps="true"
             android:layout_below="@id/dashboard"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="12dp"
-            android:layout_marginStart="10dp" />
+            android:text="Transactions"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/recyclerview_title"
-            android:layout_margin="10dp"/>
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/addBtn"
@@ -136,5 +172,11 @@
             android:backgroundTint="@color/red"
             app:tint="@color/white"
             app:borderWidth="0dp"/>
+
+
+
+
     </RelativeLayout>
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
