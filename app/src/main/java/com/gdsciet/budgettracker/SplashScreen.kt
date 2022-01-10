@@ -1,10 +1,11 @@
-package com.alterpat.budgettracker
+package com.gdsciet.budgettracker
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import gdsciet.budgettracker.R
 
 @Suppress("DEPRECATION")
 class SplashScreen : AppCompatActivity() {

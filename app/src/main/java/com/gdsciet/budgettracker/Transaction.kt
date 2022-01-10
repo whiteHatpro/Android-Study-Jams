@@ -1,8 +1,6 @@
-package com.alterpat.budgettracker
+package com.gdsciet.budgettracker
 
-import androidx.room.ColumnInfo
 import androidx.room.Entity
-import androidx.room.Ignore
 import androidx.room.PrimaryKey
 import java.io.Serializable
 

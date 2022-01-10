@@ -1,4 +1,4 @@
-package com.alterpat.budgettracker
+package com.gdsciet.budgettracker
 
 import androidx.room.*
 

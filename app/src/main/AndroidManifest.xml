@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.alterpat.budgettracker">
+    package="gdsciet.budgettracker">
 
 
 
@@ -11,11 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".DetailedActivity" />
-        <activity android:name=".AddTransactionActivity" />
+        <activity android:name="com.gdsciet.budgettracker.MainActivity"/>
+        <activity android:name="com.gdsciet.budgettracker.DetailedActivity" />
+        <activity android:name="com.gdsciet.budgettracker.AddTransactionActivity" />
         <activity
-            android:name=".SplashScreen"
+            android:name="com.gdsciet.budgettracker.SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>

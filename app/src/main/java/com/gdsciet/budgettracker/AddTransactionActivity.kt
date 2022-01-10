@@ -1,9 +1,10 @@
-package com.alterpat.budgettracker
+package com.gdsciet.budgettracker
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.widget.addTextChangedListener
 import androidx.room.Room
+import gdsciet.budgettracker.R
 import kotlinx.android.synthetic.main.activity_add_transaction.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
