@@ -1,4 +1,4 @@
-package com.alterpat.budgettracker
+package com.gdsciet.budgettracker
 
 import org.junit.Test
 
