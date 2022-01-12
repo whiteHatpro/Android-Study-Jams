@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    android:id="@+id/coordinator"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A4CDD6"
-    >
+    android:background="#75E0EEEC">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginTop="-675dp"
+        android:layout_marginTop="-740dp"
+        android:layout_marginEnd="0dp"
         app:srcCompat="@drawable/actn_bar" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/spentrack_bg" />
 
     <TextView
         android:id="@+id/titlee"
@@ -37,15 +28,25 @@
         android:textAllCaps="true"
         android:textColor="#0c0d1c"
         android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_anchor="@+id/imageView"
-        app:layout_anchorGravity="center" />
+        android:textStyle="bold" />
 
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:baselineAlignBottom="false"
+        app:srcCompat="@drawable/spentrack_bg" />
 
     <RelativeLayout
 
+        android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layout_anchor="@+id/relativeLayout2"
+        app:layout_anchorGravity="center"
         tools:context=".MainActivity">
 
 
@@ -74,6 +75,7 @@
                 android:text="$400"
                 android:textSize="32sp"
                 android:textStyle="bold" />
+
         </LinearLayout>
 
         <com.google.android.material.card.MaterialCardView
@@ -81,45 +83,50 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/balance_layout"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             app:cardCornerRadius="12dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="10dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="0.5"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/budget"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$400"
-                    android:textStyle="bold"
-                    android:textSize="32sp"
-                    android:textColor="@color/green"/>
+                        android:textColor="@color/green"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/budget"
-                        android:textSize="17sp"
-                        android:textAllCaps="true"/>
+                        android:textAllCaps="true"
+                        android:textSize="17sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="0.5"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/expense"
@@ -129,12 +136,13 @@
                         android:textColor="@color/red"
                         android:textSize="32sp"
                         android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/expense"
-                        android:textSize="17sp"
-                        android:textAllCaps="true"/>
+                        android:textAllCaps="true"
+                        android:textSize="17sp" />
                 </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
@@ -165,15 +173,13 @@
             android:id="@+id/addBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
             android:layout_margin="10dp"
-            android:src="@drawable/ic_add"
             android:backgroundTint="@color/red"
-            app:tint="@color/white"
-            app:borderWidth="0dp"/>
-
-
+            android:src="@drawable/ic_add"
+            app:borderWidth="0dp"
+            app:tint="@color/white" />
 
 
     </RelativeLayout>

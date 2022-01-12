@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#75E0EEEC"
     tools:context=".AddTransactionActivity">
 
     <ImageButton
@@ -14,7 +15,9 @@
         android:background="@drawable/close_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -39,8 +42,8 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/label_selector"
                 android:drawablePadding="12dp"
-                android:maxLines="1"
-                android:inputType="text"/>
+                android:inputType="textCapSentences"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -59,8 +62,8 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/money_selector"
                 android:drawablePadding="12dp"
-                android:maxLines="1"
-                android:inputType="numberDecimal|numberSigned"/>
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -70,7 +73,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
-            android:hint="Description"
+            android:hint="Description(Optional)"
+            app:boxBackgroundMode="outline"
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -79,17 +83,33 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/description_selector"
                 android:drawablePadding="12dp"
-                android:inputType="text|textMultiLine"/>
+                android:inputType="textCapSentences|textMultiLine" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:id="@+id/addTransactionBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add transaction"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
-            android:padding="12dp"
             android:background="@color/green"
-            android:textColor="@android:color/white"/>
+            android:padding="12dp"
+            android:text="Add transaction"
+            android:textColor="@android:color/white" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="3dp"
+        android:foreground="@drawable/images_removebg_preview__1_"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@id/closeBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
