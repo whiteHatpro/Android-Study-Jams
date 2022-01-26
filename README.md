@@ -13,7 +13,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Contributors
-[mohak-srivastava](https://github.com/mohak-srivastava)
+[mohak-srivastava](https://github.com/whiteHatpro)
 
 [Tanmay2403](https://github.com/Tanmay2403)
 
