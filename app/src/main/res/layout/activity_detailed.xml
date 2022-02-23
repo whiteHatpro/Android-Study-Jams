@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/rootView"
+    android:background="#75E0EEEC"
     tools:context=".DetailedActivity">
 
     <ImageButton
@@ -18,8 +19,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="402dp"
+        android:layout_height="298dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,17 +35,20 @@
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
             android:hint="Label"
-            app:boxStrokeWidth="0dp"
-            app:errorEnabled="true">
+            app:boxBackgroundMode="outline"
+            app:boxStrokeWidth="1dp"
+            app:errorEnabled="true"
+            app:hintTextAppearance="@style/TextLabel">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/labelInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableStart="@drawable/label_selector"
                 android:drawablePadding="12dp"
-                android:inputType="text"
+                android:inputType="textCapSentences"
                 android:maxLines="1"
-                android:textSize="34sp" />
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -55,8 +59,10 @@
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
             android:hint="Amount"
-            app:boxStrokeWidth="0dp"
-            app:errorEnabled="true">
+            app:boxBackgroundMode="outline"
+            app:boxStrokeWidth="1dp"
+            app:errorEnabled="true"
+            app:hintTextAppearance="@style/TextLabel">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/amountInput"
@@ -66,7 +72,7 @@
                 android:drawablePadding="12dp"
                 android:inputType="numberDecimal|numberSigned"
                 android:maxLines="1"
-                android:textSize="34sp" />
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -76,17 +82,20 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
-            android:hint="Description"
-            app:boxStrokeWidth="0dp"
-            app:errorEnabled="true">
+            android:hint="Description(Optional)"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeWidth="1dp"
+            app:errorEnabled="true"
+            app:hintTextAppearance="@style/TextLabel">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/descriptionInput"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="59dp"
+                android:drawableStart="@drawable/description_selector"
                 android:drawablePadding="12dp"
-                android:inputType="text|textMultiLine"
-                android:textSize="34sp" />
+                android:inputType="textCapSentences|textMultiLine"
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
@@ -105,4 +114,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="186dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="20dp"
+        android:foreground="@drawable/images_removebg_preview__1_"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@tools:sample/avatars" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
